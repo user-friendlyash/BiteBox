@@ -4,8 +4,130 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>This is Cart</h1>
+    <!--this is header section -->
+  <header>
+    <nav>
+      <img src="images/logo.png" alt="error">
+
+      <ul>
+        <li> <a href="Home.html" class="active"><i class="fa-solid fa-house"></i>Home</a></li>
+
+        <li> <a href="Menu.html"><i class="fa-solid fa-utensils"></i>Menu</a></li>
+
+        <li> <a href="BiteDeals.html"><i class="fa-solid fa-handshake"></i>Bite Deals</a></li>
+
+        <li> <a href="Cart.html"><i class="fa-solid fa-cart-shopping"></i>Cart</a></li>
+
+        <li><a href="Login.html"><i class="fa-solid fa-right-to-bracket"></i>Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!--header section end here-->
+
+  <!--start cart section-->
+  <section class="cart">
+    <h2>Your cart</h2>
+    <table>
+      <thead>
+
+        <th>item</th>
+        <th>price</th>
+        <th>Qty</th>
+        <th>total</th>
+        <th>romove</th>
+
+      </thead>
+      <tbody>
+        <tr>
+          <td class="items">
+            <img src="images/burger-1.jpg" alt="item">
+            <div>
+              <h4>Korean Spicy Burger</h4>
+              <p>Spicy + Grilled Burger</p>
+            </div>
+          </td>
+          <td>₹ 230</td>
+          <td>
+            <div  class="quality-box">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+          </td>
+          <td>₹ 230</td>
+          <td><button class="remove">❌</button></td>
+        </tr>
+
+         <tr>
+          <td class="items">
+            <img src="images/burger-2.jpg" alt="item">
+            <div>
+              <h4>Triple slices cheesy Burger</h4>
+              <p>Delicious cheesy burger with three slices</p>
+            </div>
+          </td>
+          <td>₹ 200</td>
+          <td>
+            <div class="quality-box">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+          </td>
+          <td>₹ 200</td>
+          <td><button class="remove">❌</button></td>
+        </tr>
+
+         <tr>
+          <td class="items">
+            <img src="images/coffee.png" alt="item">
+            <div>
+              <h4>Hot Cappuccino</h4>
+              <p>Rich and creamy cappuccino</p>
+            </div>
+          </td>
+          <td>₹ 169</td>
+          <td>
+            <div class="quality-box">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+          </td>
+          <td>₹ 169</td>
+          <td><button class="remove">❌</button></td>
+        </tr>
+
+         <tr>
+          <td class="items">
+            <img src="images/Combo meal.jpg" alt="item">
+            <div>
+              <h4> 1per Combo Meal</h4>
+              <p>Combo meal with a choice of burger,fries + coke</p>
+            </div>
+          </td>
+          <td>₹ 329</td>
+          <td>
+            <div  class="quality-box">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+          </td>
+          <td>₹ 329</td>
+          <td><button class="remove">❌</button></td>
+        </tr>
+        <tr class="grand-total">
+          <td colspan="3">Grand Total</td>
+          <td>928</td>
+          <td><button>Proceed</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </section>
 </body>
 </html>
