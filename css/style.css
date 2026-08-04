@@ -232,7 +232,7 @@ th,td{
   gap: 15px;
 }
 
-.item img{
+.items img{
   width: 70px;
   height: 70px;
   object-fit: cover;
@@ -270,7 +270,7 @@ th,td{
   background: darkred;
 }
 
-.qty-box button{
+.quality-box button{
   border: none;
   background: red;
   padding: 5px 10px;
@@ -575,6 +575,18 @@ footer a{
     width: 140px;
   }
  
+}
+
+@media (max-width: 768px){
+  .cart{
+    grid-template-columns: 1fr;
+  }
+  .items{
+     grid-template-columns: 1fr;
+  }
+  .quality-box{
+     grid-template-columns: 1fr;
+  }
 }
 
 

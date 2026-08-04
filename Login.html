@@ -1,53 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
     <!--font awesome link-->
-    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/4f8954d007.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="/image/favicon/favicon.ico">
-    <link rel="stylesheet" href="css/style.css">
+    <script
+      src="https://kit.fontawesome.com/YOUR_KIT_CODE.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/4f8954d007.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" type="image/x-icon" href="/image/favicon/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!--this is header sectio-->
     <header>
-        <nav>
+      <nav>
+        <!--logo-->
+        <img src="images/bitebox3D logo.png" alt="" />
 
-            <!--logo-->
-            <img src="images/bitebox3D logo.png" alt="">
-
-            <!--menu-->
-            <ul>
-                <li><a href="index.html" class="active"><i class="fa-regular fa-house"></i>Home</a></li>
-                <li><a href="menu.html"><i class="fa-solid fa-utensils"></i>Menu</a></li>
-                <li><a href="bitedeals.html"><i class="fa-solid fa-cookie-bite"></i>Bite Deals</a></li>
-                <li><a href="cart.html"><i class="fa-solid fa-cart-plus"></i>cart</a></li>
-                <li><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i>Login</a></li>
-            </ul>
-
-
-        </nav>
+        <!--menu-->
+        <ul>
+          <li>
+            <a href="index.html" class="active"
+              ><i class="fa-regular fa-house"></i>Home</a
+            >
+          </li>
+          <li>
+            <a href="menu.html"><i class="fa-solid fa-utensils"></i>Menu</a>
+          </li>
+          <li>
+            <a href="bitedeals.html"
+              ><i class="fa-solid fa-cookie-bite"></i>Bite Deals</a
+            >
+          </li>
+          <li>
+            <a href="cart.html"><i class="fa-solid fa-cart-plus"></i>cart</a>
+          </li>
+          <li>
+            <a href="login.html"
+              ><i class="fa-solid fa-right-to-bracket"></i>Login</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
     <!--end of header section-->
 
     <!--start authentication sector-->
-    <sectio class="auth-container">
-        <div class="auth-box">
-            <h2>Login to Bite<span>Box</span></h2>
-            <form>
-                <input type="email" placeholder="Enter Email" required>
-                <input type="Passward" placeholder="Enter Passward" required>
+    <section class="auth-container">
+      <div class="auth-box">
+        <h2>Login to Bite<span>Box</span></h2>
+        <form>
+          <input type="email" placeholder="Enter Email" id="email" required />
 
-                <button type="submit">Login</button>
-            </form>
-            <p><a href="signup.html">Forgot Password</a></p>
-            <p>Don't have an account<a href="signup.html">Signup</a></p>
-        </div>
-    </sectio>
-</body>
+          <div style="position: relative">
+            <input
+              type="password"
+              placeholder="Enter Password"
+              id="password"
+              required
+            />
+            <span
+              onclick="togglePassword()"
+              style="
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                cursor: pointer;
+              "
+            >
+              <i class="fa-regular fa-eye"></i>
+            </span>
+          </div>
+          <button type="submit" onclick="login()">Login</button>
+        </form>
+        <p id="error" style="color: red"></p>
+        <p><a href="signup.html">Forgot Password</a></p>
+        <p>Don't have an account<a href="signup.html">Signup</a></p>
+      </div>
+    </section>
+    <script src="/javascript/script.js"></script>
+  </body>
 </html>
